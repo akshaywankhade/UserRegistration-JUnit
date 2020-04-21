@@ -30,4 +30,17 @@ public class UserRegistrationTest {
         boolean LastName = userRegistration.ValidationLastName("wankhade");
         Assert.assertFalse(LastName);
     }
+    //Email ID
+    @Test
+    public void givenEmailID_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean EmailID = userRegistration.ValidationEmailID("akshayWankhade23@gmail.com");
+        Assert.assertTrue(EmailID);
+    }
+    @Test
+    public void givenEmailID_WhenInvalid_ShouldReturnFalse(){
+        UserRegistration userRegistration = new UserRegistration();
+        boolean EmailID = userRegistration.ValidationEmailID("akshayWakhade23.com");
+        Assert.assertFalse(EmailID);
+    }
 }
