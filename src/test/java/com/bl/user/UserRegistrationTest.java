@@ -56,4 +56,18 @@ public class UserRegistrationTest {
         boolean MobileNum = userRegistration.ValidationMobileNum("911 83021654451");
         Assert.assertFalse(MobileNum);
     }
+    //Password
+    @Test
+    public void givenPassword_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean Password = userRegistration.ValidationPassword("Akshay@123");
+        Assert.assertTrue(Password);
+    }
+    @Test
+    public void givenPassword_WhenInvalid_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean Password = userRegistration.ValidationPassword("akshay123");
+        Assert.assertFalse(Password);
+    }
 }
+
