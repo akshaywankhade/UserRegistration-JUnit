@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bl.user.UserRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-21T14:52:11" hostname="DESKTOP-7FI47GB" time="0.008">
+<testsuite name="com.bl.user.UserRegistrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-21T15:01:01" hostname="DESKTOP-7FI47GB" time="0.013">
   <properties/>
-  <testcase name="givenEmailID_WhenValid_ShouldReturnTrue" classname="com.bl.user.UserRegistrationTest" time="0.004"/>
+  <testcase name="givenEmailID_WhenValid_ShouldReturnTrue" classname="com.bl.user.UserRegistrationTest" time="0.005"/>
   <testcase name="givenLastName_WhenValid_ShouldReturnTrue" classname="com.bl.user.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenFirstName_WhenInvalid_ShouldReturnFalse" classname="com.bl.user.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenFirstName_WhenValid_ShouldReturnTrue" classname="com.bl.user.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenEmailID_WhenInvalid_ShouldReturnFalse" classname="com.bl.user.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenInvalid_ShouldReturnFalse" classname="com.bl.user.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenMobileNumber_WhenValid_ShouldReturnTrue" classname="com.bl.user.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenValid_ShouldReturnTrue" classname="com.bl.user.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailID_WhenInvalid_ShouldReturnFalse" classname="com.bl.user.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenMobileNumber_WhenInvalid_ShouldReturnFalse" classname="com.bl.user.UserRegistrationTest" time="0.0"/>
   <testcase name="givenLastName_WhenInvalid_ShouldReturnFalse" classname="com.bl.user.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

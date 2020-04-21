@@ -43,4 +43,17 @@ public class UserRegistrationTest {
         boolean EmailID = userRegistration.ValidationEmailID("akshayWakhade23.com");
         Assert.assertFalse(EmailID);
     }
+    //Mobile Number
+    @Test
+    public void givenMobileNumber_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean MobileNum = userRegistration.ValidationMobileNum("91 8308213412");
+        Assert.assertTrue(MobileNum);
+    }
+    @Test
+    public void givenMobileNumber_WhenInvalid_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean MobileNum = userRegistration.ValidationMobileNum("911 83021654451");
+        Assert.assertFalse(MobileNum);
+    }
 }
