@@ -17,4 +17,17 @@ public class UserRegistrationTest {
         boolean FirstName = userRegistration.ValidationFirstName("akshay");
         Assert.assertFalse(FirstName);
     }
+    //Last Name
+    @Test
+    public void givenLastName_WhenValid_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean LastName = userRegistration.ValidationLastName("Wankhade");
+        Assert.assertTrue(LastName);
+    }
+    @Test
+    public void givenLastName_WhenInvalid_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean LastName = userRegistration.ValidationLastName("wankhade");
+        Assert.assertFalse(LastName);
+    }
 }
