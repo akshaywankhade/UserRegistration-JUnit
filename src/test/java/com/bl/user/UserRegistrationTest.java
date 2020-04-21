@@ -1,7 +1,6 @@
 package com.bl.user;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class UserRegistrationTest {
@@ -12,11 +11,10 @@ public class UserRegistrationTest {
         boolean FirstName = userRegistration.ValidationFirstName("Akshay");
         Assert.assertTrue(FirstName);
     }
+    @Test
     public void givenFirstName_WhenInvalid_ShouldReturnFalse(){
         UserRegistration userRegistration = new UserRegistration();
         boolean FirstName = userRegistration.ValidationFirstName("akshay");
         Assert.assertFalse(FirstName);
     }
 }
-
-
